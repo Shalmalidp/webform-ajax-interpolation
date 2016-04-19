@@ -1,5 +1,11 @@
 import $ from 'jquery';
 
+// importing refactored templates
+
+import inputTemplate from './templates/input-template';
+import selectTemplate from './templates/select-template';
+import textareaTemplate from './templates/textarea-template';
+
 var url = "http://json-data.herokuapp.com/forms"
 var cont = $(".container");
 
@@ -9,64 +15,24 @@ dataReq.then(function(res){
   buildForm(res);
 });
 
-function selectopt(resobj){
 
-  var optionsArr = resobj.options;
-  var langs="";
 
-  optionsArr.forEach(function(x){
-    //langs+= x.label;
-  
-    // console.log(langs);
-   langs+= `<option value ="${ x.value }">${ x.label }</option>`;
-  }); 
-   console.log(langs); 
-  
 
-  return`
-     <div class="formElement" id="${resobj.id}">
-     <select> 
-      <option>Select your Language</option>
-      ${langs}
-     </select> 
-    </div>
-  `;
-  
-  
-};
 
-function textarea(resobj){
-  return`
-     <div class="formElement" id="${resobj.id}">
-      <textarea placeHolder= "${resobj.label}"></textarea>
-      <i class="fa ${resobj.icon}"></i>   
-    </div>
-    `;
-
-};
-
- function input(resobj){
-   return `
-    <div class="formElement" id="${resobj.id}">
-      <input type="${resobj.type}" placeHolder="${resobj.label}">
-      <i class="fa ${resobj.icon}"></i>
-</div>
-`;
- };
 var pageData;
 
 function buildForm(dataArr){
   dataArr.forEach(function(element){
     //console.log("element", element);
     if(element.type ==="textarea"){
-      pageData = textarea(element);
+      pageData = textareaTemplate(element);
       cont.append(pageData);
     }else if(element.type ==="text" || element.type ==="email" || element.type ==="tel" ){
-      pageData = input(element);
+      pageData = inputTemplate(element);
       cont.append(pageData);
     }
     else{
-      pageData = selectopt(element);
+      pageData = selectTemplate(element);
       cont.append(pageData);
     }
 

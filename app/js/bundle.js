@@ -9843,23 +9843,77 @@ return jQuery;
 }));
 
 },{}],2:[function(require,module,exports){
-"use strict";
+'use strict';
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var url = "http://json-data.herokuapp.com/forms";
-var cont = (0, _jquery2["default"])(".container");
+// importing refactored templates
 
-var dataReq = _jquery2["default"].getJSON(url);
+var _templatesInputTemplate = require('./templates/input-template');
+
+var _templatesInputTemplate2 = _interopRequireDefault(_templatesInputTemplate);
+
+var _templatesSelectTemplate = require('./templates/select-template');
+
+var _templatesSelectTemplate2 = _interopRequireDefault(_templatesSelectTemplate);
+
+var _templatesTextareaTemplate = require('./templates/textarea-template');
+
+var _templatesTextareaTemplate2 = _interopRequireDefault(_templatesTextareaTemplate);
+
+var url = "http://json-data.herokuapp.com/forms";
+var cont = (0, _jquery2['default'])(".container");
+
+var dataReq = _jquery2['default'].getJSON(url);
 dataReq.then(function (res) {
   //console.log(res);
   buildForm(res);
 });
 
+var pageData;
+
+function buildForm(dataArr) {
+  dataArr.forEach(function (element) {
+    //console.log("element", element);
+    if (element.type === "textarea") {
+      pageData = (0, _templatesTextareaTemplate2['default'])(element);
+      cont.append(pageData);
+    } else if (element.type === "text" || element.type === "email" || element.type === "tel") {
+      pageData = (0, _templatesInputTemplate2['default'])(element);
+      cont.append(pageData);
+    } else {
+      pageData = (0, _templatesSelectTemplate2['default'])(element);
+      cont.append(pageData);
+    }
+
+    //pageData = input(element);
+  });
+}
+
+},{"./templates/input-template":3,"./templates/select-template":4,"./templates/textarea-template":5,"jquery":1}],3:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function input(resobj) {
+  return "\n    <div class=\"formElement\" id=\"" + resobj.id + "\">\n      <input type=\"" + resobj.type + "\" placeHolder=\"" + resobj.label + "\">\n      <i class=\"fa " + resobj.icon + "\"></i>\n</div>\n";
+};
+
+exports["default"] = input;
+module.exports = exports["default"];
+
+},{}],4:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 function selectopt(resobj) {
 
   var optionsArr = resobj.options;
@@ -9876,34 +9930,25 @@ function selectopt(resobj) {
   return "\n     <div class=\"formElement\" id=\"" + resobj.id + "\">\n     <select> \n      <option>Select your Language</option>\n      " + langs + "\n     </select> \n    </div>\n  ";
 };
 
+exports["default"] = selectopt;
+module.exports = exports["default"];
+
+},{}],5:[function(require,module,exports){
+// Refactoring and moving to individual files
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 function textarea(resobj) {
   return "\n     <div class=\"formElement\" id=\"" + resobj.id + "\">\n      <textarea placeHolder= \"" + resobj.label + "\"></textarea>\n      <i class=\"fa " + resobj.icon + "\"></i>   \n    </div>\n    ";
 };
 
-function input(resobj) {
-  return "\n    <div class=\"formElement\" id=\"" + resobj.id + "\">\n      <input type=\"" + resobj.type + "\" placeHolder=\"" + resobj.label + "\">\n      <i class=\"fa " + resobj.icon + "\"></i>\n</div>\n";
-};
-var pageData;
+exports["default"] = textarea;
+module.exports = exports["default"];
 
-function buildForm(dataArr) {
-  dataArr.forEach(function (element) {
-    //console.log("element", element);
-    if (element.type === "textarea") {
-      pageData = textarea(element);
-      cont.append(pageData);
-    } else if (element.type === "text" || element.type === "email" || element.type === "tel") {
-      pageData = input(element);
-      cont.append(pageData);
-    } else {
-      pageData = selectopt(element);
-      cont.append(pageData);
-    }
-
-    //pageData = input(element);
-  });
-}
-
-},{"jquery":1}]},{},[2])
+},{}]},{},[2])
 
 
 //# sourceMappingURL=bundle.js.map

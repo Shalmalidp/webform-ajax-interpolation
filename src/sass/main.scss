@@ -1,11 +1,16 @@
 //@import 'font-awesome';
+$blue : lightblue;
+$green : lightgreen;
+$icons : purple;
+$back : grey;
+$fields : lightgrey;
 
 .main{
   margin-top: 20px;
   width : 500px;
   margin-left:150px;
- // height : 675px;
   border:1px solid black;  
+  background-color:$back;
 }
 .formElement {
   margin:15px 30px;
@@ -17,42 +22,45 @@ textarea{
   height: 100px;
   padding-left: 25px;
   padding-top:12px;
+  background-color : $fields;
 }
 
 select{
   width:425px;
+  background-color : $fields;
 
 }
 input{  
   width:100%;
   padding :10px 3px 10px 25px;
+  background-color : $fields;
   }
 
    i{
     position :absolute;
     top :10px;
     left :5px;
-    color:lightblue;
+    color:$icons;
   }
 }
 .top-part{
   text-align:center;
   padding: 10px;
   border-bottom: 1px solid black;
-  background-color: lightblue;
+  background-color: $blue;
 }
 
 .container{
   height:505px;
+
 }
 
 .bottom-part{
   margin-bottom: 0;
   padding :10px;
-  background-color: lightblue;
+  background-color: $blue;
 }
 button{
   padding:15px;
-  font-weight:bold;
   margin-left: 10px;
 }
