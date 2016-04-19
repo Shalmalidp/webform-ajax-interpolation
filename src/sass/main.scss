@@ -8,20 +8,32 @@
   border:1px solid black;  
 }
 .formElement {
-  margin:15px 7px;
+  margin:15px 30px;
   width :80%;
-}
+  position :relative;
+
 textarea{
-  width :425px;
+  width :402px;
   height: 100px;
+  padding-left: 25px;
+  padding-top:12px;
 }
 
 select{
   width:425px;
+
 }
-input{
+input{  
   width:100%;
   padding :10px 3px 10px 25px;
+  }
+
+   i{
+    position :absolute;
+    top :10px;
+    left :5px;
+    color:lightblue;
+  }
 }
 .top-part{
   text-align:center;

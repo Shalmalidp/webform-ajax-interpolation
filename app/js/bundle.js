@@ -9851,23 +9851,33 @@ var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-//import 'font-awesome';
-
 var url = "http://json-data.herokuapp.com/forms";
 var cont = (0, _jquery2["default"])(".container");
 
 var dataReq = _jquery2["default"].getJSON(url);
 dataReq.then(function (res) {
-  console.log(res);
+  //console.log(res);
   buildForm(res);
 });
 
 function selectopt(resobj) {
-  return "\n     <div class=\"formElement\" id=\"" + resobj.id + "\">\n     <select> \n      <option>Select your Language</option>\n\n     </select> \n    </div>\n  ";
+
+  var optionsArr = resobj.options;
+  var langs = "";
+
+  optionsArr.forEach(function (x) {
+    //langs+= x.label;
+
+    // console.log(langs);
+    langs += "<option value =\"" + x.value + "\">" + x.label + "</option>";
+  });
+  console.log(langs);
+
+  return "\n     <div class=\"formElement\" id=\"" + resobj.id + "\">\n     <select> \n      <option>Select your Language</option>\n      " + langs + "\n     </select> \n    </div>\n  ";
 };
 
 function textarea(resobj) {
-  return "\n     <div class=\"formElement\" id=\"" + resobj.id + "\">\n      <textarea placeHolder= \"" + resobj.label + "\"></textarea>\n      <i class=\"fa " + resobj.icon + "\"></i>\n      \n    </div>\n    ";
+  return "\n     <div class=\"formElement\" id=\"" + resobj.id + "\">\n      <textarea placeHolder= \"" + resobj.label + "\"></textarea>\n      <i class=\"fa " + resobj.icon + "\"></i>   \n    </div>\n    ";
 };
 
 function input(resobj) {
@@ -9877,7 +9887,7 @@ var pageData;
 
 function buildForm(dataArr) {
   dataArr.forEach(function (element) {
-    console.log("element", element);
+    //console.log("element", element);
     if (element.type === "textarea") {
       pageData = textarea(element);
       cont.append(pageData);
