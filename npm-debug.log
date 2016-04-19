@@ -1,0 +1,188 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/4.1.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-',
+1 verbose cli   'g',
+1 verbose cli   'FortAwesome/Font-Awesome',
+1 verbose cli   '--save' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.0
+4 verbose install initial load of /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/package.json
+5 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/babelify/package.json
+6 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/browser-sync/package.json
+7 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/browserify/package.json
+8 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/chalk/package.json
+9 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/font-awesome/package.json
+10 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/gulp/package.json
+11 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/gulp-notify/package.json
+12 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/gulp-plumber/package.json
+13 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/gulp-sass/package.json
+14 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/gulp-sourcemaps/package.json
+15 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/gulp-watch/package.json
+16 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/jquery/package.json
+17 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/vinyl-buffer/package.json
+18 verbose installManyTop reading scoped package data from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/node_modules/vinyl-source-stream/package.json
+19 info package.json gulp-notify@2.2.0 No license field.
+20 verbose readDependencies loading dependencies from /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/package.json
+21 silly cache add args [ '-', null ]
+22 verbose cache add spec -
+23 silly cache add args [ 'g', null ]
+24 verbose cache add spec g
+25 silly cache add args [ 'FortAwesome/Font-Awesome', null ]
+26 verbose cache add spec FortAwesome/Font-Awesome
+27 silly cache add parsed spec Result {
+27 silly cache add   raw: '-',
+27 silly cache add   scope: null,
+27 silly cache add   name: null,
+27 silly cache add   rawSpec: '-',
+27 silly cache add   spec: '/Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/-',
+27 silly cache add   type: 'local' }
+28 silly cache add parsed spec Result {
+28 silly cache add   raw: 'g',
+28 silly cache add   scope: null,
+28 silly cache add   name: 'g',
+28 silly cache add   rawSpec: '',
+28 silly cache add   spec: '*',
+28 silly cache add   type: 'range' }
+29 silly addNamed g@*
+30 verbose addNamed "*" is a valid semver range for g
+31 silly addNameRange { name: 'g', range: '*', hasData: false }
+32 silly mapToRegistry name g
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/g
+36 verbose addNameRange registry:https://registry.npmjs.org/g not in flight; fetching
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'FortAwesome/Font-Awesome',
+37 silly cache add   scope: null,
+37 silly cache add   name: null,
+37 silly cache add   rawSpec: 'FortAwesome/Font-Awesome',
+37 silly cache add   spec: 'github:fortawesome/Font-Awesome',
+37 silly cache add   type: 'hosted',
+37 silly cache add   hosted:
+37 silly cache add    { type: 'github',
+37 silly cache add      ssh: 'git@github.com:fortawesome/Font-Awesome.git',
+37 silly cache add      sshUrl: 'git+ssh://git@github.com/fortawesome/Font-Awesome.git',
+37 silly cache add      httpsUrl: 'git+https://github.com/fortawesome/Font-Awesome.git',
+37 silly cache add      gitUrl: 'git://github.com/fortawesome/Font-Awesome.git',
+37 silly cache add      shortcut: 'github:fortawesome/Font-Awesome',
+37 silly cache add      directUrl: 'https://raw.githubusercontent.com/fortawesome/Font-Awesome/master/package.json' } }
+38 verbose addRemoteGit caching FortAwesome/Font-Awesome
+39 verbose addRemoteGit fortawesome/Font-Awesome is a repository hosted by github
+40 silly tryGitProto attempting to clone git://github.com/fortawesome/Font-Awesome.git
+41 silly tryClone cloning fortawesome/Font-Awesome via git://github.com/fortawesome/Font-Awesome.git
+42 verbose tryClone git-github-com-fortawesome-Font-Awesome-git-732a8e47 not in flight; caching
+43 error addLocal Could not install /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/-
+44 verbose request uri https://registry.npmjs.org/g
+45 verbose request no auth needed
+46 info attempt registry request try #1 at 11:51:00 AM
+47 verbose request id 0750759e27de2efe
+48 http request GET https://registry.npmjs.org/g
+49 info git [ 'clone',
+49 info git   '--template=/Users/shalmalipadgaokar/.npm/_git-remotes/_templates',
+49 info git   '--mirror',
+49 info git   'git://github.com/fortawesome/Font-Awesome.git',
+49 info git   '/Users/shalmalipadgaokar/.npm/_git-remotes/git-github-com-fortawesome-Font-Awesome-git-732a8e47' ]
+50 verbose git clone --template=/Users/shalmalipadgaokar/.npm/_git-remotes/_templates --mirror git://github.com/fortawesome/Font-Awesome.git /Users/shalmalipadgaokar/.npm/_git-remotes/git-github-com-fortawesome-Font-Awesome-git-732a8e47: Cloning into bare repository '/Users/shalmalipadgaokar/.npm/_git-remotes/git-github-com-fortawesome-Font-Awesome-git-732a8e47'...
+50 verbose git clone --template=/Users/shalmalipadgaokar/.npm/_git-remotes/_templates --mirror git://github.com/fortawesome/Font-Awesome.git /Users/shalmalipadgaokar/.npm/_git-remotes/git-github-com-fortawesome-Font-Awesome-git-732a8e47: fatal: unable to connect to github.com:
+50 verbose git clone --template=/Users/shalmalipadgaokar/.npm/_git-remotes/_templates --mirror git://github.com/fortawesome/Font-Awesome.git /Users/shalmalipadgaokar/.npm/_git-remotes/git-github-com-fortawesome-Font-Awesome-git-732a8e47: github.com[0: 192.30.252.130]: errno=Connection refused
+51 silly tryHTTPS attempting to clone git+https://github.com/fortawesome/Font-Awesome.git
+52 silly tryClone cloning fortawesome/Font-Awesome via git+https://github.com/fortawesome/Font-Awesome.git
+53 verbose tryClone https-github-com-fortawesome-Font-Awesome-git-d5fbc633 not in flight; caching
+54 info git [ 'config', '--get', 'remote.origin.url' ]
+55 silly validateExistingRemote fortawesome/Font-Awesome remote.origin.url: https://github.com/fortawesome/Font-Awesome.git
+56 verbose validateExistingRemote fortawesome/Font-Awesome is updating existing cached remote /Users/shalmalipadgaokar/.npm/_git-remotes/https-github-com-fortawesome-Font-Awesome-git-d5fbc633
+57 info git [ 'fetch', '-a', 'origin' ]
+58 http 200 https://registry.npmjs.org/g
+59 silly get cb [ 200,
+59 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+59 silly get     etag: '"8AYIUDSUHLGXZT7X52XKA2O0S"',
+59 silly get     'content-type': 'application/json',
+59 silly get     'content-encoding': 'gzip',
+59 silly get     'cache-control': 'max-age=300',
+59 silly get     'content-length': '1373',
+59 silly get     'accept-ranges': 'bytes',
+59 silly get     date: 'Tue, 19 Apr 2016 15:51:00 GMT',
+59 silly get     via: '1.1 varnish',
+59 silly get     age: '0',
+59 silly get     connection: 'keep-alive',
+59 silly get     'x-served-by': 'cache-sjc3135-SJC',
+59 silly get     'x-cache': 'MISS',
+59 silly get     'x-cache-hits': '0',
+59 silly get     'x-timer': 'S1461081060.476518,VS0,VE34',
+59 silly get     vary: 'Accept-Encoding' } ]
+60 verbose get saving g to /Users/shalmalipadgaokar/.npm/registry.npmjs.org/g/.cache.json
+61 silly addNameRange number 2 { name: 'g', range: '*', hasData: true }
+62 silly addNameRange versions [ 'g',
+62 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '2.0.0' ] ]
+63 silly addNamed g@2.0.0
+64 verbose addNamed "2.0.0" is a plain semver version for g
+65 silly mapToRegistry name g
+66 silly mapToRegistry using default registry
+67 silly mapToRegistry registry https://registry.npmjs.org/
+68 silly mapToRegistry uri https://registry.npmjs.org/g
+69 verbose addRemoteTarball https://registry.npmjs.org/g/-/g-2.0.0.tgz not in flight; adding
+70 verbose addRemoteTarball [ 'https://registry.npmjs.org/g/-/g-2.0.0.tgz',
+70 verbose addRemoteTarball   '7a77ca0d66b65b206ce1d362428b4b8ee6b3a420' ]
+71 info retry fetch attempt 1 at 11:51:00 AM
+72 info attempt registry request try #1 at 11:51:00 AM
+73 http fetch GET https://registry.npmjs.org/g/-/g-2.0.0.tgz
+74 http fetch 200 https://registry.npmjs.org/g/-/g-2.0.0.tgz
+75 silly fetchAndShaCheck shasum 7a77ca0d66b65b206ce1d362428b4b8ee6b3a420
+76 verbose addTmpTarball /var/folders/7f/d_mb8hpd3_36k2417zw36q980000gn/T/npm-3412-c9e33c51/registry.npmjs.org/g/-/g-2.0.0.tgz not in flight; adding
+77 verbose addTmpTarball already have metadata; skipping unpack for g@2.0.0
+78 silly cache afterAdd g@2.0.0
+79 verbose afterAdd /Users/shalmalipadgaokar/.npm/g/2.0.0/package/package.json not in flight; writing
+80 verbose afterAdd /Users/shalmalipadgaokar/.npm/g/2.0.0/package/package.json written
+81 verbose updateRemote git fetch -a origin (https://github.com/fortawesome/Font-Awesome.git)
+82 verbose setPermissions fortawesome/Font-Awesome set permissions on /Users/shalmalipadgaokar/.npm/_git-remotes/https-github-com-fortawesome-Font-Awesome-git-d5fbc633
+83 verbose resolveHead fortawesome/Font-Awesome original treeish: master
+84 info git [ 'rev-list', '-n1', 'master' ]
+85 silly resolveHead fortawesome/Font-Awesome resolved treeish: 65ca5ce7774fcff84853db0e651778aa5276d6d1
+86 verbose resolveHead fortawesome/Font-Awesome resolved Git URL: git+https://github.com/fortawesome/Font-Awesome.git#65ca5ce7774fcff84853db0e651778aa5276d6d1
+87 silly resolveHead Git working directory: /var/folders/7f/d_mb8hpd3_36k2417zw36q980000gn/T/npm-3412-c9e33c51/git-cache-714175d2955c/65ca5ce7774fcff84853db0e651778aa5276d6d1
+88 info git [ 'clone',
+88 info git   '/Users/shalmalipadgaokar/.npm/_git-remotes/https-github-com-fortawesome-Font-Awesome-git-d5fbc633',
+88 info git   '/var/folders/7f/d_mb8hpd3_36k2417zw36q980000gn/T/npm-3412-c9e33c51/git-cache-714175d2955c/65ca5ce7774fcff84853db0e651778aa5276d6d1' ]
+89 verbose cloneResolved fortawesome/Font-Awesome clone Cloning into '/var/folders/7f/d_mb8hpd3_36k2417zw36q980000gn/T/npm-3412-c9e33c51/git-cache-714175d2955c/65ca5ce7774fcff84853db0e651778aa5276d6d1'...
+89 verbose cloneResolved done.
+90 info git [ 'checkout', '65ca5ce7774fcff84853db0e651778aa5276d6d1' ]
+91 verbose checkoutTreeish fortawesome/Font-Awesome checkout Note: checking out '65ca5ce7774fcff84853db0e651778aa5276d6d1'.
+91 verbose checkoutTreeish
+91 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+91 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+91 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+91 verbose checkoutTreeish
+91 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+91 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+91 verbose checkoutTreeish
+91 verbose checkoutTreeish   git checkout -b <new-branch-name>
+91 verbose checkoutTreeish
+91 verbose checkoutTreeish HEAD is now at 65ca5ce... Merge branch 'master' of https://github.com/FortAwesome/Font-Awesome
+92 verbose addLocalDirectory /Users/shalmalipadgaokar/.npm/font-awesome/4.6.1/package.tgz not in flight; packing
+93 verbose tar pack [ '/Users/shalmalipadgaokar/.npm/font-awesome/4.6.1/package.tgz',
+93 verbose tar pack   '/var/folders/7f/d_mb8hpd3_36k2417zw36q980000gn/T/npm-3412-c9e33c51/git-cache-714175d2955c/65ca5ce7774fcff84853db0e651778aa5276d6d1' ]
+94 verbose tarball /Users/shalmalipadgaokar/.npm/font-awesome/4.6.1/package.tgz
+95 verbose folder /var/folders/7f/d_mb8hpd3_36k2417zw36q980000gn/T/npm-3412-c9e33c51/git-cache-714175d2955c/65ca5ce7774fcff84853db0e651778aa5276d6d1
+96 verbose addLocalTarball adding from inside cache /Users/shalmalipadgaokar/.npm/font-awesome/4.6.1/package.tgz
+97 verbose addRemoteGit data._from: fortawesome/Font-Awesome
+98 verbose addRemoteGit data._resolved: git+https://github.com/fortawesome/Font-Awesome.git#65ca5ce7774fcff84853db0e651778aa5276d6d1
+99 silly cache afterAdd font-awesome@4.6.1
+100 verbose afterAdd /Users/shalmalipadgaokar/.npm/font-awesome/4.6.1/package/package.json not in flight; writing
+101 verbose afterAdd /Users/shalmalipadgaokar/.npm/font-awesome/4.6.1/package/package.json written
+102 verbose stack Error: ENOENT: no such file or directory, open '/Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/-'
+102 verbose stack     at Error (native)
+103 verbose cwd /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation
+104 error Darwin 15.4.0
+105 error argv "/usr/local/Cellar/node/4.1.0/bin/node" "/usr/local/bin/npm" "install" "-" "g" "FortAwesome/Font-Awesome" "--save"
+106 error node v4.1.0
+107 error npm  v2.14.4
+108 error path /Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/-
+109 error code ENOENT
+110 error errno -2
+111 error syscall open
+112 error enoent ENOENT: no such file or directory, open '/Users/shalmalipadgaokar/tiy/projects/perimeter/webform-ajax-interpolation/-'
+112 error enoent This is most likely not a problem with npm itself
+112 error enoent and is related to npm not being able to find a file.
+113 verbose exit [ -2, true ]
